@@ -142,7 +142,7 @@ const TransactionForm = () => {
                         <span aria-hidden="true" className="absolute inset-0 bg-blue-200 dark:bg-blue-700 opacity-50 rounded-full">
                         </span>
                         <span className="relative text-blue-500 dark:text-blue-400">
-                          ${parseFloat(shares * stock.currentPrice).toFixed(2)}
+                          ₹{parseFloat(shares * stock.currentPrice).toFixed(2)}
                         </span>
                       </span>
                     </div>
@@ -240,7 +240,7 @@ const TransactionForm = () => {
                         <span aria-hidden="true" className="absolute inset-0 bg-blue-200 dark:bg-blue-700 opacity-50 rounded-full">
                         </span>
                         <span className="relative text-blue-500 dark:text-blue-400">
-                          ${parseFloat(shares * stock.currentPrice).toFixed(2)}
+                          ₹{parseFloat(shares * stock.currentPrice).toFixed(2)}
                         </span>
                       </span>
                     </div>

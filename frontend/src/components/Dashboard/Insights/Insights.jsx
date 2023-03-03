@@ -23,7 +23,7 @@ const Insights = (props) => {
               <span aria-hidden="true" className="absolute inset-0 bg-yellow-200 dark:bg-yellow-700 opacity-50 rounded-full">
               </span>
               <span className="text-lg sm:text-xl relative text-yellow-600 dark:text-yellow-400">
-                ${user?.result.coins.toFixed(2)}
+                ₹{user?.result.coins.toFixed(2)}
               </span>
             </span>
             {user?.result.coins > 100000 ?

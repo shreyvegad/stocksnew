@@ -27,7 +27,7 @@ const InvestmentPrice = (props) => {
           <span aria-hidden="true" className="absolute inset-0 bg-green-200 dark:bg-green-700 opacity-50 rounded-full">
           </span>
           <span className="relative text-green-500 dark:text-green-40">
-            ${value} <span className="ml-2 text-xs hidden xl:inline">{diff}% up</span>
+            ₹{value} <span className="ml-2 text-xs hidden xl:inline">{diff}% up</span>
           </span>
         </span>
         :
@@ -35,7 +35,7 @@ const InvestmentPrice = (props) => {
           <span aria-hidden="true" className="absolute inset-0 bg-red-200 dark:bg-red-700 opacity-50 rounded-full">
           </span>
           <span className="relative text-red-500 dark:text-red-400">
-            ${value} <span className="ml-2 text-xs hidden xl:inline">{diff}% down</span>
+            ₹{value} <span className="ml-2 text-xs hidden xl:inline">{diff}% down</span>
           </span>
         </span>
       }

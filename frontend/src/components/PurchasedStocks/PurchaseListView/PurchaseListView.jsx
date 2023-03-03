@@ -60,7 +60,7 @@ const PurchaseListView = (props) => {
                     </td>
                     <td onClick={() => detailPage(purchase.stock)} className="hidden md:table-cell px-5 py-5 border-b border-gray-200 dark:border-gray-800   text-sm cursor-pointer">
                       <p className="text-gray-900 dark:text-white whitespace-no-wrap">
-                        ${purchase.initialInvestment.toFixed(2)}
+                        ₹{purchase.initialInvestment.toFixed(2)}
                       </p>
                     </td>
                     <td onClick={() => detailPage(purchase.stock)} className="px-5 py-5 border-b border-gray-200 dark:border-gray-800   text-sm cursor-pointer">

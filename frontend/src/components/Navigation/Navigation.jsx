@@ -110,7 +110,7 @@ const Navigation = () => {
 												<span aria-hidden="true" className="absolute inset-0 bg-yellow-200 dark:bg-yellow-700 opacity-50 rounded-full">
 												</span>
 												<span className="text-sm relative text-yellow-600 dark:text-yellow-400">
-													${user?.result.coins.toFixed(2)}
+													₹{user?.result.coins.toFixed(2)}
 												</span>
 											</span>
 										</div>
@@ -130,7 +130,7 @@ const Navigation = () => {
 										<span aria-hidden="true" className="absolute inset-0 bg-yellow-200 dark:bg-yellow-700 opacity-50 rounded-full">
 										</span>
 										<span className="text-sm relative text-yellow-600 dark:text-yellow-400">
-											${user?.result.coins.toFixed(2)}
+											₹{user?.result.coins.toFixed(2)}
 										</span>
 									</span>
 
