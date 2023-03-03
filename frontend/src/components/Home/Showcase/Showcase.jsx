@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { getStocks } from "../../../actions/stocks";
-import { MARKET_ERROR_OCCURRED } from '../../../constants/actions';
-import socketIOClient from "socket.io-client";
+// import { MARKET_ERROR_OCCURRED } from '../../../constants/actions';
+// import socketIOClient from "socket.io-client";
 import ShowcaseCardSkeleton from "./ShowcaseCardSkeleton";
 import ShowcaseCard from "./ShowcaseCard";
 
 const Showcase = () => {
-  const socket = socketIOClient(process.env.REACT_APP_STOCKS_API, { transports: ['websocket', 'polling', 'flashsocket'] });
+//   const socket = socketIOClient(process.env.REACT_APP_STOCKS_API, { transports: ['websocket', 'polling', 'flashsocket'] });
   const stocks = useSelector((state) => state.stocksReducer);
   const dispatch = useDispatch();
 
@@ -15,14 +15,14 @@ const Showcase = () => {
     dispatch(getStocks());
   }, [dispatch]);
 
-  useEffect(() => {
-    socket.connect();
-    dispatch({ type: MARKET_ERROR_OCCURRED, payload: "" });
-    return () => {
-      socket.disconnect();
-      dispatch({ type: MARKET_ERROR_OCCURRED, payload: "" });
-    }
-  }, [socket, dispatch]);
+//   useEffect(() => {
+//     // socket.connect();
+//     dispatch({ type: MARKET_ERROR_OCCURRED, payload: "" });
+//     // return () => {
+//     //   socket.disconnect();
+//       dispatch({ type: MARKET_ERROR_OCCURRED, payload: "" });
+//     // }
+//   }, [socket, dispatch]);
 
   return (
     <div className="bg-white dark:bg-gray-800">
@@ -33,7 +33,7 @@ const Showcase = () => {
           </span>
         </h2>
         <div className="flex flex-col items-center justify-center lg:flex-row">
-          {!stocks?.length ? <ShowcaseCardSkeleton /> : <ShowcaseCard socket={socket} stocks={stocks} stockOne={stocks[0]} stockTwo={stocks[16]} stockThree={stocks[1]} />}
+          {!stocks?.length ? <ShowcaseCardSkeleton /> : <ShowcaseCard stocks={stocks} stockOne={stocks[0]} stockTwo={stocks[16]} stockThree={stocks[1]} />}
         </div>
       </div>
     </div>
