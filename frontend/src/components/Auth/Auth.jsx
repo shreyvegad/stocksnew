@@ -59,7 +59,7 @@ const Auth = () => {
     <div className="bg-white dark:bg-gray-800 h-screen my-auto flex items-center">
       <div className="w-full max-w-sm mx-auto overflow-hidden bg-gray-100 rounded-lg shadow-md dark:bg-gray-900">
         <div className="px-6 py-4">
-          <h2 className="text-3xl font-bold text-center text-gray-700 dark:text-white">Mock Stocks</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-700 dark:text-white">Bull Traders</h2>
 
           <h3 className="mt-1 text-xl font-medium text-center text-gray-600 dark:text-gray-200">Welcome Back</h3>
 

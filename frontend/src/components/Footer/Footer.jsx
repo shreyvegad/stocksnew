@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="w-full -mx-6 lg:w-2/5">
             <div className="px-6">
               <div>
-                <Link to="/" className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Mock Stocks</Link>
+                <Link to="/" className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Bull Traders</Link>
               </div>
 
               <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">The trading platform for all.</p>
@@ -63,7 +63,7 @@ const Footer = () => {
         <hr className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700" />
 
         <div>
-          <p className="text-center text-gray-800 dark:text-white">© Mock Stocks {new Date().getFullYear()}</p>
+          <p className="text-center text-gray-800 dark:text-white">© Bull Traders {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

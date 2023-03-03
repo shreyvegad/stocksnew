@@ -13,7 +13,7 @@ test('if not logged in, there is no welcome username message', () => {
   );
 
   //assert text
-  expect(screen.getByRole('heading', { name: /mock stocks/i })).toHaveTextContent(
-    "Mock Stocks"
+    expect(screen.getByRole('heading',{ name: /bull traders/i })).toHaveTextContent(
+    "Bull Traders"
   );
 })
